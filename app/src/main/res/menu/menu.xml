@@ -16,6 +16,11 @@
         android:enabled="true"
         android:icon="@drawable/ic_baseline_bookmark_24"
         android:title="@string/bookmark" />
+    <item
+        android:id="@+id/fragment_Profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/profile" />
 
 
 

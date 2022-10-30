@@ -27,16 +27,15 @@ class ArticleFragment : Fragment(R.layout.fragment_article) {
 
          Glide.with(this).load(article.urlToImage).into(imgArticle)
          tvTitleArticle.text = article.title
-         tvDescArticle.text = article.description
-         tvUrlArticle.text = "Read More :\n"+ article.url
+         tvNama.text = article.description
+         tvLinkGithub.text = "Read More :\n"+ article.url
 
-        tvUrlArticle.setOnClickListener {
+        tvLinkGithub.setOnClickListener {
             val uri = Uri.parse(article.url) // missing 'http://' will cause crashed
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
             exitProcess(-1)
         }
-
 
 
     }

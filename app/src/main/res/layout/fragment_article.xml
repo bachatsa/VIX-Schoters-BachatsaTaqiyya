@@ -55,7 +55,7 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvDescArticle"
+        android:id="@+id/tvNama"
         style="@style/SubTitleTextStyle"
         android:padding="10dp"
         android:text="description"
@@ -71,7 +71,7 @@
             android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvUrlArticle"
+        android:id="@+id/tvLinkGithub"
         style="@style/SubTitleTextStyle"
         android:text="url"
         android:layout_margin="8dp"
@@ -81,7 +81,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDescArticle"/>
+        app:layout_constraintTop_toBottomOf="@id/tvNama"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

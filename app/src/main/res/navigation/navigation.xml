@@ -47,6 +47,12 @@
         app:popExitAnim="@anim/slide_out_right"/>
 </fragment>
 
+<fragment
+    android:id="@+id/fragment_Profile"
+    android:name="com.example.finalsubmissionrecylerviewsederhana.view.ProfileFragment"
+    android:label="fragment_profile"
+    tools:layout="@layout/fragment_profile">
+</fragment>
    <fragment
     android:id="@+id/fragment_Article"
     android:name="com.example.finalsubmissionrecylerviewsederhana.view.ArticleFragment"
