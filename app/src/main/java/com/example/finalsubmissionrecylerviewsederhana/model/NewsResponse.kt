@@ -1,0 +1,14 @@
+package com.example.finalsubmissionrecylerviewsederhana.model
+
+import com.google.gson.annotations.SerializedName
+
+data class NewsResponse (
+    @SerializedName("articles")
+    var articles: MutableList<Article>,
+    @SerializedName("status")
+    var status: String,
+    @SerializedName("totalResult")
+    var totalResult: Int?
+
+
+)

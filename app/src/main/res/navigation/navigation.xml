@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_breakingNews">
+
+    <fragment
+        android:id="@+id/fragment_breakingNews"
+        android:name="com.example.finalsubmissionrecylerviewsederhana.view.BreakingNews"
+        android:label="fragment_breaking_news"
+        tools:layout="@layout/fragment_breaking_news">
+        <action
+            android:id="@+id/actiong_breakingNewsFragment_toArticlFragment"
+            app:enterAnim="@anim/slide_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:destination="@+id/fragment_Article"
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_searchNews"
+        android:name="com.example.finalsubmissionrecylerviewsederhana.view.SearchNewsFragment"
+        android:label="fragment_search_news"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/actiong_searchNewsFragment_toArticlFragment"
+            app:enterAnim="@anim/slide_right"
+            app:destination="@+id/fragment_Article"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+    android:id="@+id/fragment_bookmarkNews"
+    android:name="com.example.finalsubmissionrecylerviewsederhana.view.BookmarkFragment"
+    android:label="fragment_bookmark_news"
+    tools:layout="@layout/fragment_bookmark">
+    <action
+        android:id="@+id/actiong_bookmarkNewsFragment_toArticlFragment"
+        app:enterAnim="@anim/slide_right"
+        app:destination="@+id/fragment_Article"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_out_left"
+        app:popExitAnim="@anim/slide_out_right"/>
+</fragment>
+
+   <fragment
+    android:id="@+id/fragment_Article"
+    android:name="com.example.finalsubmissionrecylerviewsederhana.view.ArticleFragment"
+    android:label="fragment_article"
+    tools:layout="@layout/fragment_article">
+    <argument
+        android:name="article"
+        app:argType="com.example.finalsubmissionrecylerviewsederhana.model.Article"/>
+</fragment>
+
+</navigation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragment_breakingNews"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_newspaper_24"
+        android:title="@string/dashboard" />
+    <item
+        android:id="@+id/fragment_searchNews"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/search" />
+    <item
+        android:id="@+id/fragment_bookmarkNews"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_bookmark_24"
+        android:title="@string/bookmark" />
+
+
+
+</menu>
